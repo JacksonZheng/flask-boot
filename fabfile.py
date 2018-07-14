@@ -17,7 +17,7 @@ env.password = '1q2ws3edc$'
 # The servers where the commands are executed
 env.hosts = ['47.52.234.115']
 # www folder
-project_folder = '/appl/projects/fb/www'
+project_folder = '/appl/projects/theta/www'
 
 
 def deploy():

@@ -843,6 +843,11 @@ class Model(dict):
         collection = cls.get_collection(**kwargs)
         return collection.group(key, condition, initial, reduce, finalize, **kwargs)
 
+    @classmethod
+    def find_and_modify(cls, filter, update, upsert=False, *args, **kwargs):
+        collection = cls.get_collection(**kwargs)
+        return collection.find_and_modify(filter, update, upsert, *args, **kwargs)
+
     #
     #
     # Instance level pymongo api
